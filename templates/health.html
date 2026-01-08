@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Health{% endblock %}
+
+{% block content %}
+
+<div class="calc-cards">
+    <h1 class="calc-title">Health Calculator</h1>
+
+    <form method="POST", class="cat-form">
+        <label>Calculator Type</label>
+        <select name="calc_type" required>
+            <option value="bmi">BMI Calculator</option>
+            <option value="bmr">BMR Calculator</option>
+        </select>
+
+        <input type="number" step="any" name="weight" placeholder="Weight (kg)" required>
+        <input type="number" step="any" name="height" placeholder="Height (cm)" required>
+        <input type="number" name="age" placeholder="Age (BMR only)">
+        
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result is not none %}
+        <div class="result" id="result">
+            Result: {{ result }}
+            {% if category %}
+                <br>Category: {{ category }}
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+
+{% endblock %}

@@ -4,12 +4,22 @@
 
 {% block content %}
 
-<form method="POST", class="login-form">
-    <h1>Login</h1>
+<div class="log-sign-page">
+<div class="login-sign-card">
+    <div class="login-sign-strip">
+        <h1>
+            Login
+        </h1>
+    </div>
+
+    <form method="POST", class="login-sign-form">
     <input type="email" name="username" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>
 
-    <button class="login-btn" type="submit">Login</button>
-</form>
+    <button class="login-sign-btn" type="submit">Login</button>
+    </form>
+
+</div>
+</div>
 
 {% endblock %}

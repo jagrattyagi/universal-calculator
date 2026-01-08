@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Finance{% endblock %}
+
+{% block content %}
+<div class="calc-cards">
+
+<h1 class="calc-title">
+    Finance Calculator
+</h1>
+
+<form method="POST" class="cat-form">
+    <label>Calculator Type:</label>
+    <select name="calc_type" required>
+        <option value="si">Simple Interest</option>
+        <option value="ci">Compound Interest</option>
+        <option value="emi">EMI</option>
+    </select><br><br>
+
+    <input type="number" step="any" name="principal" placeholder="Principal Amount" required><br><br>
+    <input type="number" step="any" name="rate" placeholder="Rate (%)" required><br><br>
+    <input type="number" step="any" name="time" placeholder="Time (Years)" required><br><br>
+
+    <input type="number" name="n" placeholder="Compounds / Year (CI only)"><br><br>
+
+    <button type="submit">Calculate</button>
+</form>
+<div class="result" id="result">
+{% if result is not none %}
+    <h2>Result: {{ result }}</h2>
+{% endif %}
+</div>
+
+</div>
+{% endblock %}
