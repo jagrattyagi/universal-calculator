@@ -168,7 +168,7 @@ body {
     font-weight: bold;
 }
 
-.log-sign-page{
+.login-page{
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -176,7 +176,7 @@ body {
     
 }
 
-.login-sign-card{
+.login-card{
     width: 400px;
     padding: 0;
     border-radius: 20px;
@@ -185,33 +185,33 @@ body {
     text-align: center;
 }
 
-.login-sign-strip{
+.login-strip{
     padding: 20px;
     border-bottom: 2px solid #ddd;
     background: #f7f7f7;
     border-radius: 18px 18px 0 0;
 }
 
-.login-sign-strip h1{
+.login-strip h1{
     margin: 0;
     font-size: 28px;
 }
 
-.login-sign-form{
+.login-form{
     display: flex;
     flex-direction: column;
     gap: 18px;
     padding: 30px;
 }
 
-.login-sign-form input{
+.login-form input{
     padding: 14px;
     border-radius: 30px;
     border: 1.5px solid #333;
     font-size: 16px;
 }
 
-.login-sign-btn{
+.login-btn{
     margin-top: 10px;
     padding: 12px;
     border-radius: 30px;
@@ -220,5 +220,55 @@ body {
     cursor: pointer;
     font-size:16px ;
 }
-    
 
+.sign-page{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-card{
+    width: 400px;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.sign-strip{
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    background: #f7f7f7;
+    border-radius: 18px 18px 0 0;
+}
+
+.sign-strip h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+.sign-form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px;
+}
+
+.sign-form input{
+    padding: 14px;
+    border-radius: 30px;
+    border: 1.5px solid #333;
+    font-size: 16px;
+}
+
+.sign-btn{
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 1.5px solid #333;
+    background: #fff;
+    cursor: pointer;
+    font-size:16px ;
+}
